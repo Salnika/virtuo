@@ -18,7 +18,7 @@ Reset the database : `npm run dev:db:reset`
 
 ### Routes
 
-#####Stations
+Stations
 ```
 POST: Create a new station
 Parameters: 
@@ -47,7 +47,7 @@ query: {
 Return: OK
 ```
 
-#####Cars
+Cars
 ```
 POST: Create a new car
 Parameters: 
