@@ -1,0 +1,17 @@
+version: "2"
+services:
+  data:
+    image: postgres:10.3
+    container_name: "virtuo-test"
+    restart: always
+    volumes:
+      - /data/db
+    ports:
+      - "5432:5432"
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - ALLOW_IP_RANGE=0.0.0.0/0
+      - DEBUG=true
+      - POSTGRES_DBNAME=virtuo-test
+      - POSTGRES_USER=user
+      - POSTGRES_PASS=pswd
